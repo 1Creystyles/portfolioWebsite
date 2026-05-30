@@ -383,132 +383,182 @@ main > h1{
     color: #64748b;
 }
 
-@media (max-width: 900px) {
-    ul {
-        gap: 24px;
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 768px){
+
+    /* NAVIGATION */
+    nav{
+        padding:15px 20px;
+        flex-direction:column;
+        gap:15px;
     }
 
-    .heroSection {
-        padding: 60px 6%;
+    nav h1{
+        font-size:1.2rem;
     }
 
-    .Cards {
-        padding: 30px 4%;
-        gap: 24px;
+    ul{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    .box {
-        width: clamp(260px, 80%, 460px);
+    ul li{
+        font-size:1rem;
     }
 
-    .skillSet {
-        padding: 20px 30px 50px;
-        gap: 16px;
+    /* HERO SECTION */
+    .heroSection{
+        min-height:80vh;
+        padding:40px 20px;
+        max-width:100%;
     }
 
-    .techCard {
-        width: clamp(90px, 20%, 140px);
-        height: 110px;
-    }
-}
-
-
-@media (max-width: 640px) {
-    nav {
-        padding: 16px 18px;
-        flex-wrap: wrap;
-        gap: 12px;
+    .heroSection h1{
+        font-size:2.7rem;
+        line-height:1.2;
     }
 
-    nav h1 {
-        font-size: 1.1rem;
-        letter-spacing: 1.5px;
+    .heroSection h2{
+        font-size:1.1rem;
+        max-width:100%;
     }
 
-    ul {
-        gap: 18px;
+    .heroSection h4{
+        font-size:0.9rem;
     }
 
-    ul li {
-        font-size: 0.95rem;
+    /* SECTION TITLES */
+    main > h1,
+    .experienceSection h1,
+    .contactSection h1{
+        font-size:2.2rem;
+        margin-bottom:25px;
     }
 
-    .heroSection {
-        min-height: 80vh;
-        padding: 50px 6%;
-        align-items: flex-start;
-        text-align: left;
+    /* PROJECT CARDS */
+    .Cards{
+        padding:40px 20px;
     }
 
-    .box {
-        width: 100%;
-        max-width: 100%;
-        min-height: auto;
+    .box{
+        width:100%;
+        max-width:100%;
+        min-height:auto;
     }
 
-    .img {
-        height: 170px;
+    .img{
+        width:90%;
+        height:180px;
     }
 
-    .skillSet {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 20px 18px 40px;
-        gap: 14px;
+    .box h2{
+        font-size:1.3rem;
     }
 
-    .techCard {
-        width: 100%;
-        height: 90px;
+    .box p{
+        font-size:0.95rem;
     }
 
-    .experienceCard {
-        padding: 22px 18px;
+    /* TECH STACK */
+    .skillSet{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        align-items:center;
     }
 
-    .contactLinks {
-        flex-direction: column;
-        align-items: center;
-        gap: 14px;
+    .techCard{
+        width:100%;
+        max-width:400px;
+        height:auto;
     }
 
-    .contactLinks a {
-        width: 80%;
-        text-align: center;
+    .cardImg{
+        width:100%;
+        height:auto;
+        display:block;
+    }
+
+    /* EXPERIENCE */
+    .experienceSection{
+        padding:60px 20px;
+    }
+
+    .experienceCard{
+        padding:25px;
+    }
+
+    .experienceCard h2{
+        font-size:1.3rem;
+    }
+
+    /* CONTACT */
+    .contactSection{
+        padding:60px 20px;
+    }
+
+    .contactLinks{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contactLinks a{
+        width:100%;
+        max-width:300px;
+        text-align:center;
+    }
+
+    /* FOOTER */
+    .footer{
+        padding:40px 20px;
     }
 
     .footerLinks,
-    .footerSocials {
-        gap: 14px;
+    .footerSocials{
+        gap:15px;
     }
 }
 
-@media (max-width: 400px) {
-    nav h1 {
-        font-size: 1rem;
+
+/* EXTRA SMALL PHONES */
+@media screen and (max-width:480px){
+
+    .heroSection h1{
+        font-size:2.2rem;
     }
 
-    ul {
-        gap: 12px;
+    .heroSection h2{
+        font-size:1rem;
     }
 
-    ul li {
-        font-size: 0.85rem;
+    .heroSection h4{
+        font-size:0.85rem;
     }
 
-    .heroSection {
-        padding: 40px 5%;
+    nav h1{
+        font-size:1rem;
     }
 
-    .Cards {
-        padding: 20px 4%;
+    ul{
+        gap:12px;
     }
 
-    .skillSet {
-        grid-template-columns: repeat(2, 1fr);
+    ul li{
+        font-size:0.9rem;
     }
 
-    .contactLinks a {
-        width: 100%;
+    .box{
+        border-radius:18px;
+    }
+
+    .img{
+        height:160px;
+    }
+
+    main > h1,
+    .experienceSection h1,
+    .contactSection h1{
+        font-size:1.8rem;
     }
 }
