@@ -32,7 +32,7 @@ const responses = {
   help: 'Available commands: skills, projects, contact, clear, whoami',
   skills: 'Languages: TypeScript, JavaScript, Python, C++, SQL | Frameworks: Next.js, React, Tailwind, Three.js',
   projects: 'Featured: Synex Wealth Engine, Apex 3D Configurator, Neural Analytics Dashboard.',
-  whoami: 'Obinna Armstrong Obinna — CS Student, Creative Engineer & WebGL Developer.',
+  details: 'Obinna Armstrong Obinna — CS Student, Creative Engineer & WebGL Developer.',
   contact: 'Email: obinna@example.com | LinkedIn: linkedin.com/in/obinna-armstrong',
 };
 
